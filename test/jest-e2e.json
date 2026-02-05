@@ -1,0 +1,31 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/auth": "<rootDir>/../libs/auth/src",
+    "@app/auth/(.*)": "<rootDir>/../libs/auth/src/$1",
+    "@app/bets": "<rootDir>/../libs/bets/src",
+    "@app/bets/(.*)": "<rootDir>/../libs/bets/src/$1",
+    "@app/core": "<rootDir>/../libs/core/src",
+    "@app/core/(.*)": "<rootDir>/../libs/core/src/$1",
+    "@app/dashboard": "<rootDir>/../libs/dashboard/src",
+    "@app/dashboard/(.*)": "<rootDir>/../libs/dashboard/src/$1",
+    "@app/games": "<rootDir>/../libs/games/src",
+    "@app/games/(.*)": "<rootDir>/../libs/games/src/$1",
+    "@app/transactions": "<rootDir>/../libs/transactions/src",
+    "@app/transactions/(.*)": "<rootDir>/../libs/transactions/src/$1",
+    "@app/typeorm": "<rootDir>/../libs/typeorm/src",
+    "@app/typeorm/(.*)": "<rootDir>/../libs/typeorm/src/$1",
+    "@app/users": "<rootDir>/../libs/users/src",
+    "@app/users/(.*)": "<rootDir>/../libs/users/src/$1"
+  }
+}

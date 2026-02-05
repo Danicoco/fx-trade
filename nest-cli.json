@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "auth": {
+      "type": "library",
+      "root": "libs/auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth/tsconfig.lib.json"
+      }
+    },
+    "bets": {
+      "type": "library",
+      "root": "libs/bets",
+      "entryFile": "index",
+      "sourceRoot": "libs/bets/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/bets/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "dashboard": {
+      "type": "library",
+      "root": "libs/dashboard",
+      "entryFile": "index",
+      "sourceRoot": "libs/dashboard/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/dashboard/tsconfig.lib.json"
+      }
+    },
+    "games": {
+      "type": "library",
+      "root": "libs/games",
+      "entryFile": "index",
+      "sourceRoot": "libs/games/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/games/tsconfig.lib.json"
+      }
+    },
+    "transactions": {
+      "type": "library",
+      "root": "libs/transactions",
+      "entryFile": "index",
+      "sourceRoot": "libs/transactions/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/transactions/tsconfig.lib.json"
+      }
+    },
+    "typeorm": {
+      "type": "library",
+      "root": "libs/typeorm",
+      "entryFile": "index",
+      "sourceRoot": "libs/typeorm/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/typeorm/tsconfig.lib.json"
+      }
+    },
+    "users": {
+      "type": "library",
+      "root": "libs/users",
+      "entryFile": "index",
+      "sourceRoot": "libs/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/users/tsconfig.lib.json"
+      }
+    }
+  }
+}
